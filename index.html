@@ -39,7 +39,7 @@
     
     <a class="navbar-brand me-2" href="index.html">gptstudio</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.1.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.1.9007</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,12 +59,13 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-services">Services</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-services">
     <a class="dropdown-item" href="articles/openai.html">OpenAI</a>
-    <a class="dropdown-item" href="articles/ollama.html">Local Models with Ollama</a>
+    <a class="dropdown-item" href="articles/ollama.html">Ollama for Local Models</a>
     <a class="dropdown-item" href="articles/huggingface.html">HuggingFace</a>
     <a class="dropdown-item" href="articles/anthropic.html">Anthropic</a>
     <a class="dropdown-item" href="articles/azure.html">Azure OpenAI</a>
     <a class="dropdown-item" href="articles/google.html">Google AI Studio</a>
     <a class="dropdown-item" href="articles/perplexity.html">Perplexity</a>
+    <a class="dropdown-item" href="articles/cohere.html">Cohere</a>
   </div>
 </li>
 <li class="nav-item">
@@ -94,7 +95,8 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header">
-<img src="logo.png" class="logo" alt=""><h1 id="gptstudio-">gptstudio <a class="anchor" aria-label="anchor" href="#gptstudio-"></a>
+<img src="logo.png" class="logo" alt=""><h1 id="gptstudio-">gptstudio 
+<a class="anchor" aria-label="anchor" href="#gptstudio-"></a>
 </h1>
 </div>
 <!-- badges: start -->
@@ -170,6 +172,12 @@
 <td><a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/quickstart?tabs=command-line,python&amp;pivots=rest-api" class="external-link">Azure OpenAI API Docs</a></td>
 <td><a href="articles/azure.html">Azure OpenAI Setup</a></td>
 </tr>
+<tr class="even">
+<td><a href="https://cohere.com/" class="external-link">Cohere</a></td>
+<td>command, command-light, command-nightly, command-light-nightly</td>
+<td><a href="https://docs.cohere.com/" class="external-link">Cohere API Docs</a></td>
+<td><a href="articles/cohere.html">Cohere Setup</a></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -191,11 +199,8 @@
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://usethis.r-lib.org" class="external-link">usethis</a></span><span class="op">)</span></span>
 <span><span class="fu">edit_r_environ</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p>If you wish to set the variable temporarily for a single session, use this command, substituting <code>"&lt;APIKEY&gt;"</code> with your actual OpenAI API key:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.setenv.html" class="external-link">Sys.setenv</a></span><span class="op">(</span>OPENAI_API_KEY <span class="op">=</span> <span class="st">"&lt;APIKEY&gt;"</span><span class="op">)</span></span></code></pre></div>
 <p>For a persistent setting that loads every time you launch this project, add the following line to .Renviron, replacing <code>"&lt;APIKEY&gt;"</code> with your actual API key:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="va">OPENAI_API_KEY</span><span class="op">=</span><span class="st">"&lt;APIKEY&gt;"</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="va">OPENAI_API_KEY</span><span class="op">=</span><span class="st">"&lt;APIKEY&gt;"</span></span></code></pre></div>
 <p><strong>Caution:</strong> If you’re using version control systems like GitHub or GitLab, remember to include .Renviron in your .gitignore file to prevent exposing your API key!</p>
 <p><strong>Important Note:</strong> OpenAI API will not function without valid payment details entered into your OpenAI account. This is a restriction imposed by OpenAI and is unrelated to this package.</p>
 </div>

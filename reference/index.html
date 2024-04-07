@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">gptstudio</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.1.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.1.9007</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,12 +29,13 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-services">Services</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-services">
     <a class="dropdown-item" href="../articles/openai.html">OpenAI</a>
-    <a class="dropdown-item" href="../articles/ollama.html">Local Models with Ollama</a>
+    <a class="dropdown-item" href="../articles/ollama.html">Ollama for Local Models</a>
     <a class="dropdown-item" href="../articles/huggingface.html">HuggingFace</a>
     <a class="dropdown-item" href="../articles/anthropic.html">Anthropic</a>
     <a class="dropdown-item" href="../articles/azure.html">Azure OpenAI</a>
     <a class="dropdown-item" href="../articles/google.html">Google AI Studio</a>
     <a class="dropdown-item" href="../articles/perplexity.html">Perplexity</a>
+    <a class="dropdown-item" href="../articles/cohere.html">Cohere</a>
   </div>
 </li>
 <li class="active nav-item">
@@ -75,9 +76,14 @@
 
       <dl><dt>
           
-          <code><a href="StreamHandler.html">StreamHandler</a></code> 
+          <code><a href="OpenaiStreamParser.html">OpenaiStreamParser</a></code> 
         </dt>
         <dd>Stream handler for chat completions</dd>
+      </dl><dl><dt>
+          
+          <code><a href="chat.html">chat()</a></code> 
+        </dt>
+        <dd>Chat Interface for gptstudio</dd>
       </dl><dl><dt>
           
           <code><a href="chat_create_system_prompt.html">chat_create_system_prompt()</a></code> 
@@ -105,6 +111,11 @@
         <dd>Chat App Theme</dd>
       </dl><dl><dt>
           
+          <code><a href="create_chat_cohere.html">create_chat_cohere()</a></code> 
+        </dt>
+        <dd>Create a chat with the Cohere Chat API</dd>
+      </dl><dl><dt>
+          
           <code><a href="create_completion_anthropic.html">create_completion_anthropic()</a></code> 
         </dt>
         <dd>Generate text completions using Anthropic's API</dd>
@@ -115,14 +126,14 @@
         <dd>Generate text using Azure OpenAI's API</dd>
       </dl><dl><dt>
           
+          <code><a href="create_completion_google.html">create_completion_google()</a></code> 
+        </dt>
+        <dd>Generate text completions using Google AI Studio's API</dd>
+      </dl><dl><dt>
+          
           <code><a href="create_completion_huggingface.html">create_completion_huggingface()</a></code> 
         </dt>
         <dd>Generate text completions using HuggingFace's API</dd>
-      </dl><dl><dt>
-          
-          <code><a href="create_completion_palm.html">create_completion_palm()</a></code> 
-        </dt>
-        <dd>Generate text completions using PALM (MakerSuite)'s API</dd>
       </dl><dl><dt>
           
           <code><a href="create_completion_perplexity.html">create_completion_perplexity()</a></code> 
@@ -174,6 +185,11 @@ Run the Chat GPT Shiny App as a background job and show it in the viewer pane</d
           <code><a href="gptstudio_comment_code.html">gptstudio_comment_code()</a></code> 
         </dt>
         <dd>Comment Code Addin</dd>
+      </dl><dl><dt>
+          
+          <code><a href="gptstudio_create_skeleton.html">gptstudio_create_skeleton()</a></code> 
+        </dt>
+        <dd>Create a Request Skeleton</dd>
       </dl><dl><dt>
           
           <code><a href="gptstudio_request_perform.html">gptstudio_request_perform()</a></code> 
@@ -242,15 +258,20 @@ Run the Chat GPT Shiny App as a background job and show it in the viewer pane</d
 response.</dd>
       </dl><dl><dt>
           
-          <code><a href="query_api_huggingface.html">query_api_huggingface()</a></code> 
+          <code><a href="query_api_cohere.html">query_api_cohere()</a></code> 
         </dt>
-        <dd>A function that sends a request to the HuggingFace API and returns the
+        <dd>Send a request to the Cohere Chat API and return the response</dd>
+      </dl><dl><dt>
+          
+          <code><a href="query_api_google.html">query_api_google()</a></code> 
+        </dt>
+        <dd>A function that sends a request to the Google AI Studio API and returns the
 response.</dd>
       </dl><dl><dt>
           
-          <code><a href="query_api_palm.html">query_api_palm()</a></code> 
+          <code><a href="query_api_huggingface.html">query_api_huggingface()</a></code> 
         </dt>
-        <dd>A function that sends a request to the PALM (MakerSuite) API and returns the
+        <dd>A function that sends a request to the HuggingFace API and returns the
 response.</dd>
       </dl><dl><dt>
           
@@ -279,14 +300,19 @@ response.</dd>
         <dd>Base for a request to the Anthropic API</dd>
       </dl><dl><dt>
           
+          <code><a href="request_base_cohere.html">request_base_cohere()</a></code> 
+        </dt>
+        <dd>Base for a request to the Cohere Chat API</dd>
+      </dl><dl><dt>
+          
+          <code><a href="request_base_google.html">request_base_google()</a></code> 
+        </dt>
+        <dd>Base for a request to the Google AI Studio API</dd>
+      </dl><dl><dt>
+          
           <code><a href="request_base_huggingface.html">request_base_huggingface()</a></code> 
         </dt>
         <dd>Base for a request to the HuggingFace API</dd>
-      </dl><dl><dt>
-          
-          <code><a href="request_base_palm.html">request_base_palm()</a></code> 
-        </dt>
-        <dd>Base for a request to the PALM (MakerSuite) API</dd>
       </dl><dl><dt>
           
           <code><a href="request_base_perplexity.html">request_base_perplexity()</a></code> 

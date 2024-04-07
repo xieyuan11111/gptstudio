@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">gptstudio</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.1.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.1.9007</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,12 +29,13 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-services">Services</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-services">
     <a class="dropdown-item" href="../articles/openai.html">OpenAI</a>
-    <a class="dropdown-item" href="../articles/ollama.html">Local Models with Ollama</a>
+    <a class="dropdown-item" href="../articles/ollama.html">Ollama for Local Models</a>
     <a class="dropdown-item" href="../articles/huggingface.html">HuggingFace</a>
     <a class="dropdown-item" href="../articles/anthropic.html">Anthropic</a>
     <a class="dropdown-item" href="../articles/azure.html">Azure OpenAI</a>
     <a class="dropdown-item" href="../articles/google.html">Google AI Studio</a>
     <a class="dropdown-item" href="../articles/perplexity.html">Perplexity</a>
+    <a class="dropdown-item" href="../articles/cohere.html">Cohere</a>
   </div>
 </li>
 <li class="active nav-item">
@@ -73,8 +74,8 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">create_completion_anthropic</span><span class="op">(</span></span>
 <span>  <span class="va">prompt</span>,</span>
 <span>  history <span class="op">=</span> <span class="cn">NULL</span>,</span>
-<span>  model <span class="op">=</span> <span class="st">"claude-1"</span>,</span>
-<span>  max_tokens_to_sample <span class="op">=</span> <span class="fl">256</span>,</span>
+<span>  model <span class="op">=</span> <span class="st">"claude-2.1"</span>,</span>
+<span>  max_tokens <span class="op">=</span> <span class="fl">1028</span>,</span>
 <span>  key <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"ANTHROPIC_API_KEY"</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
@@ -91,10 +92,10 @@
 
 <dt>model</dt>
 <dd><p>The model to use for generating text. By default, the
-function will try to use "claude-1".</p></dd>
+function will try to use "claude-2.1".</p></dd>
 
 
-<dt>max_tokens_to_sample</dt>
+<dt>max_tokens</dt>
 <dd><p>The maximum number of tokens to generate. Defaults to 256.</p></dd>
 
 
@@ -116,7 +117,7 @@ by the API.</p>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="fu">create_completion_anthropic</span><span class="op">(</span></span></span>
 <span class="r-in"><span>  prompt <span class="op">=</span> <span class="st">"\n\nHuman: Hello, world!\n\nAssistant:"</span>,</span></span>
-<span class="r-in"><span>  model <span class="op">=</span> <span class="st">"claude-1"</span>,</span></span>
+<span class="r-in"><span>  model <span class="op">=</span> <span class="st">"claude-2.1"</span>,</span></span>
 <span class="r-in"><span>  max_tokens_to_sample <span class="op">=</span> <span class="fl">256</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span></span></span>

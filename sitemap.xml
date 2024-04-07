@@ -25,6 +25,9 @@
     <loc>/articles/azure.html</loc>
   </url>
   <url>
+    <loc>/articles/cohere.html</loc>
+  </url>
+  <url>
     <loc>/articles/google.html</loc>
   </url>
   <url>
@@ -58,7 +61,10 @@
     <loc>/news/index.html</loc>
   </url>
   <url>
-    <loc>/reference/StreamHandler.html</loc>
+    <loc>/reference/OpenaiStreamParser.html</loc>
+  </url>
+  <url>
+    <loc>/reference/chat.html</loc>
   </url>
   <url>
     <loc>/reference/chat_create_system_prompt.html</loc>
@@ -76,16 +82,19 @@
     <loc>/reference/create_chat_app_theme.html</loc>
   </url>
   <url>
+    <loc>/reference/create_chat_cohere.html</loc>
+  </url>
+  <url>
     <loc>/reference/create_completion_anthropic.html</loc>
   </url>
   <url>
     <loc>/reference/create_completion_azure_openai.html</loc>
   </url>
   <url>
-    <loc>/reference/create_completion_huggingface.html</loc>
+    <loc>/reference/create_completion_google.html</loc>
   </url>
   <url>
-    <loc>/reference/create_completion_palm.html</loc>
+    <loc>/reference/create_completion_huggingface.html</loc>
   </url>
   <url>
     <loc>/reference/create_completion_perplexity.html</loc>
@@ -119,6 +128,9 @@
   </url>
   <url>
     <loc>/reference/gptstudio_comment_code.html</loc>
+  </url>
+  <url>
+    <loc>/reference/gptstudio_create_skeleton.html</loc>
   </url>
   <url>
     <loc>/reference/gptstudio_request_perform.html</loc>
@@ -166,10 +178,13 @@
     <loc>/reference/query_api_anthropic.html</loc>
   </url>
   <url>
-    <loc>/reference/query_api_huggingface.html</loc>
+    <loc>/reference/query_api_cohere.html</loc>
   </url>
   <url>
-    <loc>/reference/query_api_palm.html</loc>
+    <loc>/reference/query_api_google.html</loc>
+  </url>
+  <url>
+    <loc>/reference/query_api_huggingface.html</loc>
   </url>
   <url>
     <loc>/reference/query_api_perplexity.html</loc>
@@ -187,10 +202,13 @@
     <loc>/reference/request_base_anthropic.html</loc>
   </url>
   <url>
-    <loc>/reference/request_base_huggingface.html</loc>
+    <loc>/reference/request_base_cohere.html</loc>
   </url>
   <url>
-    <loc>/reference/request_base_palm.html</loc>
+    <loc>/reference/request_base_google.html</loc>
+  </url>
+  <url>
+    <loc>/reference/request_base_huggingface.html</loc>
   </url>
   <url>
     <loc>/reference/request_base_perplexity.html</loc>
